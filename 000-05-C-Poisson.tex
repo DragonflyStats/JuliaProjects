@@ -1,0 +1,175 @@
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{<META NAME="SaveForMode"CONTENT="1">}
+%TCIDATA{LastRevised=Wednesday, February 23, 201113:24:34}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\pagestyle{fancy}
+\setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
+\lhead{MS4222} \rhead{Kevin O'Brien} \chead{The Poisson Distribution} %\input{tcilatex}
+
+\begin{document}
+
+
+\section*{The Poisson Distribution: Introduction}
+	\begin{itemize}
+		\item The Poisson Distribution is a statistical distribution showing the frequency probability of specific events when the average probability of a single occurrence is known. 
+		
+		\item The Poisson distribution is a discrete probability distribution.
+		
+%	\item Application of the Poisson distribution enables managers to introduce optimal scheduling systems. 
+		
+%	\item For example, if the average number of people that rent movies on a friday night at a single video store location is 400,  a Poisson distribution can answer such questions as, "\textit{What is the probability that more than 600 people will rent movies?}".
+		
+		
+		
+		\item One of the most famous historical practical uses of the Poisson distribution was estimating the annual number of Prussian cavalry soldiers killed due to horse-kicks. 
+		
+		\item Other modern examples include estimating the number of car crashes in a city of a given size. In physiology, this distribution is often used to calculate the probabilistic frequencies of different types of neurotransmitter secretions. 
+	\end{itemize}
+
+\subsection*{Poisson Random Variables}
+
+\begin{itemize}
+	\item A Poisson random variable is the number of successes that result from a Poisson experiment.
+	\item The probability distribution of a Poisson random variable is called a Poisson distribution.
+	\item \textbf{Very Important:} This distribution describes the number of occurrences in a \textbf{\emph{unit period (or space)}}
+	\item \textbf{Very Important:} The expected number of occurrences is $m$ per unit period (or unit space).
+	
+% \item The number of occurrences in a 
+% \item \texttt{R} refers to the mean number of occurrences as \texttt{lambda} rather than \texttt{m}. 
+	
+
+\end{itemize}
+
+\smallskip
+
+\subsection*{Characteristics of a Poisson Experiment}
+A Poisson experiment is a statistical experiment that has the following properties:
+\begin{itemize}
+	\item The experiment results in outcomes that can be classified as successes or failures.
+	\item The average number of successes (m) that occurs in a specified unit space is known.
+	\item Note that the specified unit space could take many forms. For instance, it could be a length, an area, a volume, a period of time, etc.
+	\item  The probability that a success will occur is proportional to the size of the \textbf{\emph{unit space}}.
+	\item The probability that a success will occur in an extremely small unit space is virtually zero.
+%		\item[$\ast$]  The \texttt{pois} family of functions are used to compute probabilities and quantiles.
+	\item  The \textbf{Poisson mean} $m$ (or $\lambda$ pronounced as ``lambda") is the expected number of occurrences per unit space / unit period.
+\begin{itemize}
+\item[$\ast$] (Remark:  Some texts will use the notation $\lambda$ rather than  $m$ ).
+\end{itemize}
+\end{itemize}
+
+%
+%%---------------------------------------------------------------------------%
+%\section{Poisson Distribution}
+%
+%\begin{itemize}
+%\item A discrete random variable that is often used is one which estimates the number of occurrences  over a specified time period or space.
+%\item (remark : a specified space can be a specified length , a specified area, or a specified volume.)
+%
+%\item
+
+%\subsection{Poisson Probability Distribution}
+%
+%
+%
+%\begin{itemize}
+%	\item The number of occurrences in a unit period (or space)
+%	\item The expected number of occurrences is $m$
+%	\item Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the following formula (next slide).
+%\end{itemize}
+
+
+\subsection*{Important Assumptions}
+ If the following two properties are satisfied, the number of occurrences is a random variable described by the Poisson probability distribution
+%
+\begin{itemize}
+\item[(1)]      The probability of an occurrence is the same for any two intervals of equal length.
+\item[(2)]     The occurrence or non-occurrence in any interval is independent of the occurrence or non-occurrence in any other interval.
+\end{itemize}
+
+
+%---------------------------------------------------------------------------%
+
+
+
+
+
+
+
+
+%---------------------------------------------------------------------%
+
+
+\subsection*{When To Use The Poisson Probability Distribution}
+Consider cars passing a point on a rarely used country road. Is this a Poisson Random Variable?
+Suppose that 
+\begin{enumerate}
+\item Arrivals occur at an average rate of $m$ cars per unit time.
+\item The probability of an arrival in an interval of length $k$
+is constant.
+\item The number of arrivals in two non-overlapping
+intervals of time are independent.
+\end{enumerate}
+This would be an appropriate use of the Poisson Distribution.
+
+%---------------------------------------------------------------------%
+
+
+{
+
+
+
+%
+%Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the following formula:
+%
+%
+%
+%
+%
+%
+%%\frametitle{Poisson Random Variables}
+%\noindent\textbf{Question:}\\
+%Suppose that random variable X follows a Poisson distribution with rate parameter \texttt{\textbf{L}}. \\
+%If we increase the value of \texttt{\textbf{L}}, which of the following is true?
+
+
+
+
+
+
+
+\subsection*{Knowing which distribution to use}
+\begin{itemize}
+\item For the end of semester examination, you will be required to know when it is appropriate to use the Poisson distribution, and when to use the binomial distribution.
+\item Recall the key parameters of each distribution.
+\item Binomial : number of \textbf{\emph{successes}} in $n$ \textbf{\emph{independent trials}}.
+\item Poisson : number of \textbf{\emph{occurrences}} in a \textbf{\emph{unit space}}.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document} 
