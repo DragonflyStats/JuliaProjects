@@ -1,0 +1,344 @@
+\documentclass[]{report}
+
+\voffset=-1.5cm
+\oddsidemargin=0.0cm
+\textwidth = 480pt
+
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{graphics}
+\usepackage{newlfont}
+\usepackage{eurosym}
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\begin{document}
+
+
+
+\section{Important rules for Normal distribution}
+
+%=====================================================================================%
+\section{Complement Rule}
+For some value $A$, and for any continuous distribution $X$ (including any normal distribution and the Z distribution) we can say.
+\[ P(X \leq x) = 1 - P(X \geq x) \]
+
+This rule is very simple intuitive. If 70\% of the population is below a certain height, that means that 30\% of the population is above that height. Having said that, it is very powerful in solving normal probability problems.
+
+ \textbf{Complement rule}
+  Common to all continuous random variables
+ \[P(Z \geq k) = 1 - P(Z \leq k) \]
+ Similarly
+ \[P(X \leq k) = 1 - P(X \geq k) \]
+ 
+ 
+ \[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
+
+Any normal distribution problem can be solved with some combination of the following rules.
+
+
+
+This rule applies to all continuous probability distributions, i.e. the normal distribution, the exponential distribution and the uniform distribution.
+(Common to all continuous random variables) 
+
+
+Example
+\[P(Z \leq 1.96)   = 1 - P(Z \geq 1.96)   = 1 - 0.0250 = 0.9750\]
+
+
+\begin{itemize}
+\item $P(Z \leq 1.27) = 1-P(Z \geq 1.27) $
+\item $ P(Z \geq 1.27) = 1-P(Z \leq 1.27) $
+\end{itemize}
+\begin{itemize} \item The Complement rule (Common to all continuous random variables)
+
+\[P(Z \geq k) = 1 - P(Z \leq k) \]
+
+
+Similarly
+
+\[P(X \geq k) = 1 - P(X \leq k) \]
+
+\end{itemize}
+%=====================================================================================%
+\section{Symmetry Rule}
+For the standard normal ($Z$) distribution only, where \[Z \sim \mathcal{N}(0,1^2)\] and $z$ and $-z$ are both values drawn from that distribution, we can say
+\[ P(Z \leq -z) = P(Z \geq z) \]
+
+or conversely
+
+\[ P(Z \geq -z) = P(Z \leq z) \]
+
+Important - the symmetry rule can be applied to z-values.
+
+
+
+\begin{itemize}
+\item
+This rule is based on the property of symmetry mentioned previously.
+\item
+Only the probabilities corresponding to values between 0 and 4 are tabulated in Murdoch Barnes.
+\item
+If we have a negative value of k, we can use the symmetry rule.
+\end{itemize}
+\[P(Z \leq -k) = P(Z \geq k) \]
+by extension, we can say
+\[P(Z \geq -k) = P(Z \leq k) \]
+
+\begin{itemize} 
+\item \textbf{Complement rule} is common to all continuous random variables
+\[P(X \geq k) = 1 - P(X \leq k) \]
+\end{itemize}
+
+
+
+\begin{itemize}
+\item $ P(Z \leq -1.27) = P(Z \geq 1.27) $
+\item $ P(Z \geq -1.27) = P(Z \leq 1.27) $
+\end{itemize}
+
+  
+\section*{Example}
+
+Find  $P(Z \leq -1.8)$
+
+\noindent \textbf{Solution:} 
+
+$P(Z \leq -1.80) = P(Z \geq 1.80) $ = 0.0359
+
+%============================================================%
+
+
+%=====================================================================================%
+\section{Complement and Symmetry Rules}
+
+Any normal distribution problem can be solved (partially at least) with some combination of the following rules.
+
+\subsection{Z Scores: Example 1 }
+Find $P(Z \geq -1.28)$\\
+\textbf{Solution}\\
+\begin{itemize}
+\item Remark \[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
+\item Using the symmetry rule
+\[P(Z \geq -1.28) = P(Z \leq 1.28) \]
+\item Using the complement rule
+\[P(Z \geq -1.28) = 1 - P(Z \geq 1.28) \]
+\[P(Z \geq -1.28) = 1 - 0.1003 = 0.8997 \]
+\end{itemize}
+
+
+
+
+
+\section{Example}
+Given that the mean $\mu  = 100$ and that the standard deviation $\sigma  = 2.5$, what is the "z-value" for normal random variable x = 106?
+
+\[ z  = \frac{x-\mu}{\sigma}   = \frac{106-100}{2.5}  = \frac{6}{2.5} = 2.40\]
+
+%-----------------------------------------------%
+
+Relationship between "x value" and "z  value"
+
+[VERY IMPORTANT]
+
+\[If   z  = \frac{x-\mu}{\sigma}\]( $z$  and $x$  are some values )
+
+then we can say  \[P(X \geq x) = \Pr(Z \geq z)\]
+
+or equivalently
+
+
+\[P(X \leq x) = \Pr(Z \leq z)\]
+
+From previous example 
+
+\[P(X \geq 106) = \Pr(Z \geq 2.40)\]
+
+
+From Murdoch Barnes Table 3, 
+
+\[\P(Z \geq 2.40) = 0.00820\] 
+
+
+Therefore 
+
+
+\[P(X \geq 106) = 0.00820\] 
+
+
+
+
+%===============================================%
+
+Find the probability of a ``z" random variable being between -1.8 and 1.96?
+i.e. Compute $P(-1.8 \leq Z \leq 1.96)$
+Solution
+\begin{itemize}
+\item Consider the complement event of being in this interval: a combination of being too low or two high.
+\item
+The probability of being too low for this interval is $P(Z \leq -1.80) = 0.0359$ (from before)
+\item
+The probability of being too high for this interval is $P(Z \geq 1.96) = 0.0250$ (from before)
+\item
+Therefore the probability of being \textbf{outside} the interval is 0.0359 + 0.0250 = 0.0609.
+\item
+Therefore the probability of being \textbf{inside} the interval is 1- 0.0609 = 0.9391
+$P(-1.8 \leq Z \leq 1.96) = 0.9391$
+\end{itemize}
+
+
+\subsection{Example }
+Find the probability of a "z" random variable greater than (or equal to) -1.8?
+Find  $P(Z \geq -1.8)$
+\noindent \t{Solution }
+
+(From a previous question, $P(Z \leq -1.8) = 0.0359$)
+
+\[P(Z \geq -1.8) = 1 - P(Z \leq -1.8) \]
+\[P(Z \geq -1.8)= 1 - 0.0359 = 0.9641\]
+
+
+\section{Complement and Symmetry Rules}
+
+For a normally distributed random variable with mean $\mu = 1000$ and standard deviation $\sigma = 100$, compute $P(X \geq 873)$.
+
+\begin{itemize} \item First, find the Z-value using the standardization formula.
+\[
+z_{873} = {x_o - \mu \over \sigma} = {873 - 1000 \over 100} = {-127 \over 100} = -1.27
+\]
+\item We can say $P(X \geq 873) = P(Z \geq -1.27)$.
+\item Use complement rule and symmetry rule to evaluate  $P(Z \geq -1.27)$.
+\item $ P(Z \geq -1.27) = P(Z \leq 1.27) = 1 - P(Z \geq 1.27) $  = 1 - 0.1020 = {0.8980}.
+\end{itemize}
+
+
+%------------------------------------------------------------------%
+
+
+\section{Summary}
+
+\begin{itemize}
+
+\item \textbf{Complement Rule}\\
+For some value $A$, and for any continuous distribution $X$ (including any normal distribution and the Z distribution) we can say.
+\[ P(X \leq a) = 1 - P(X \geq A) \]
+
+\item \textbf{Symmetry Rule}\\
+For the standard normal ($Z$) distribution only, we can say
+\[ P(Z \leq -A) = P(Z \geq A) \]
+
+or conversely
+
+\[ P(Z \geq -A) = P(Z \leq A) \]
+
+\end{itemize}
+
+
+
+
+%===============================================%
+\section{Normal Distributions}
+\begin{equation}
+Z_{o}= \frac{ X_{o}-\mu }{\sigma}
+\end{equation}
+
+\begin{equation}
+P(Z \geq Z_{o}) = P(X \geq X_{o})
+\end{equation}
+
+%------------------------------------------------------------------------%
+{
+\subsection{Using Murdoch Barnes tables 3}
+\begin{itemize}
+\item $ P(Z \geq 1.64) = 0.505$
+\item $ P(Z \geq 1.65) = 0.495$ \bigskip
+\item $ P(Z \geq 1.645)$ is approximately the average value of $ P(Z \geq 1.64)$ and $ P(Z \geq 1.65)$.
+\item $ P(Z \geq 1.645)$ = (0.0495 + 0.0505)/2 = 0.0500. ( i.e. $5\%$ )
+\end{itemize}
+}
+
+
+
+
+
+
+%============================================================% 
+
+\subsection{Solving using the Z distribution}
+When we have a normal distribution with any mean $\mu$ and any standard deviation $\sigma$ , we answer probability questions about the distribution by first converting all values to corresponding values of the standard normal ("z") distribution.
+The formula used to convert any random variable "X" ( with mean $\mu$ and standard deviation $\sigma$ specified) to the standard normal ("z") distribution is given as follows.
+\[ Z_o = {X_o - \mu \over \sigma} \]
+$Z$ is the standard normal random variable with a mean of zero and a standard deviation of 1.
+It can be thought of as a measure of how many standard deviations that a value "x" is from mean $\mu$ .
+
+
+\noindent \textbf{Remarks}
+
+\begin{itemize}
+\item A value of x equal to mean $\mu$  results in a z -value of 0
+
+\[ z = \frac{\mu - \mu}{\sigma} = \frac{0}{\sigma} = 0\]
+
+
+\item Thus we can see that a value of "x" corresponding to its mean $\mu$ corresponds to a z-value at its mean , which is 0.
+
+\item A value of "x" that is one standard deviation above its mean (i.e. $x=\mu +\sigma$  ), we see that the corresponding z value is 1.
+
+
+\item Thus a value of x that is one standard deviation away from it's mean yields a z-value of 1.
+\end{itemize}
+
+
+
+
+
+
+
+%=======================================================================%
+
+Solution 
+
+
+
+Example 
+Find the probability of a "z" random variable greater than (or equal to) -1.8?
+Find  
+
+Solution
+
+
+
+
+
+\section{Normal Distribution : Solving problems}
+Recap:
+\begin{itemize}
+\item We must know the normal mean $\mu$ and the normal standard deviation $\sigma$.
+\item The normal random variable is $X \sim \mbox{N} ( \mu , \sigma^2)$.\smallskip
+\item (If we don't, we usually have to determine them, given the information in the question.)\smallskip
+\item The standard normal random variable is $Z\sim \mbox{N} ( 0 , 1^2)$.\smallskip
+\item The standard normal distribution is well described in Murdoch Barnes Table 3, which tabulates $P(Z \geq z_o)$ for a range of $Z$ values.
+\end{itemize}
+
+%-----------------------------------------------------%
+
+
+\begin{itemize}
+\item For the given value $x_o$ from the variable $X$, we compute the corresponding z-score $z_o$.
+\[ z_o = { x_o - \mu \over \sigma} \]
+\item When $z_o$ corresponds to $x_o$, the following identity applies:
+\[  P(X \geq x_o )= P(Z \geq z_o ) \]
+\item Alternatively $ P(X \leq x_o )= P(Z \leq z_o ) $
+\end{itemize}
+
+
+
+
+\end{document}
+
+
+

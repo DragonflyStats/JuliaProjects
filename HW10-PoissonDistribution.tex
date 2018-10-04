@@ -1,0 +1,216 @@
+\documentclass[12pt, a4paper]{report}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{amscd}
+
+\usepackage{subfiles}
+\usepackage{framed}
+\usepackage{subfiles}
+\usepackage{amsthm, amsmath}
+\usepackage{amsbsy}
+\usepackage{framed}
+\usepackage[usenames]{color}
+\usepackage{listings}
+\lstset{% general command to set parameter(s)
+	basicstyle=\small, % print whole listing small
+	keywordstyle=\color{red}\itshape,
+	% underlined bold black keywords
+	commentstyle=\color{blue}, % white comments
+	stringstyle=\ttfamily, % typewriter type for strings
+	showstringspaces=false,
+	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt, %
+	frame=shadowbox,
+	rulesepcolor=\color{black},
+	columns=fullflexible
+} %
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{3.0cm}{2.5cm}{15.5 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.5}
+\pagenumbering{arabic}
+%\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+%\renewcommand{\thetable}{\thesection.\arabic{table}}
+%\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+\author{ } \date{ }
+
+\begin{document}
+	
+	%---------------------------------------------------------------------------%
+	{
+		\textbf{Poisson Distribution}
+		A Poisson random variable is the number of successes that result from a Poisson experiment.
+		
+		The probability distribution of a Poisson random variable is called a Poisson distribution.
+		
+		Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the following formula:
+	}
+	
+	%---------------------------------------------------------------------------%
+	{
+		\textbf{The Poisson Probability Distribution}
+		\begin{itemize}
+			\item The number of occurrences in a unit period (or space)
+			\item The expected number of occurrences is $m$
+		\end{itemize}
+	}
+	
+	%---------------------------------------------------------------------------%
+	{
+		\textbf{Poisson Formulae}
+		The probability that there will be $k$ occurrences in a unit time period is denoted $P(X=k)$, and is computed as follows.
+		\Large
+		\[ P(X = k)=\frac{m^k e^{-m}}{k!} \]
+		
+	}
+	%---------------------------------------------------------------------------%
+	{
+		\textbf{Poisson Formulae}
+		Given that there is on average 2 occurrences per hour, what is the probability of no occurences in the next hour? \\ i.e. Compute $P(X=0)$ given that $m=2$
+		\Large
+		\[ P(X = 0)=\frac{2^0 e^{-2}}{0!} \]
+		\normalsize
+		\begin{itemize}
+			\item $2^0$ = 1
+			\item $0!$ = 1
+		\end{itemize}
+		The equation reduces to
+		\[ P(X = 0)=e^{-2} = 0.1353\]
+	}
+	%---------------------------------------------------------------------------%
+	{
+		\textbf{Poisson Formulae}
+		What is the probability of one occurrences in the next hour? \\ i.e. Compute $P(X=1)$ given that $m=2$
+		\Large
+		\[ P(X = 1)=\frac{2^1 e^{-2}}{1!} \]
+		\normalsize
+		\begin{itemize}
+			\item $2^1$ = 2
+			\item $1!$ = 1
+		\end{itemize}
+		The equation reduces to
+		\[ P(X = 1) = 2 \times e^{-2} = 0.2706\]
+	}
+	%---------------------------------------------------------------------------%
+\section*{Probability of events for a Poisson distribution}
+An event can occur 0, 1, 2, … times in an interval. The average number of events in an interval is designated ${\displaystyle \lambda }$   (lambda). Lambda is the event rate, also called the rate parameter. The probability of observing k events in an interval is given by the equation
+
+\[{\displaystyle P(k{\text{ events in interval}})=e^{-\lambda }{\frac {\lambda ^{k}}{k!}}} \]
+where
+
+\begin{itemize}
+	\item ${\displaystyle \lambda }$  is the average number of events per interval
+	\item	e is the number 2.71828... (Euler's number) the base of the natural logarithms
+	\item	k takes values 0, 1, 2, …
+	\item	$k! = k \times (k − 1) \times (k − 2) \times \ldots \times 2 \times 1$ is the factorial of k.
+\end{itemize}
+
+This equation is the probability mass function (PMF) for a Poisson distribution.
+%------------------------------------------------------------------%
+\frame{
+	\frametitle{Poisson Expected Value and Variance}
+	
+	
+	If the random variable X has a Poisson distribution with parameter $m$, we write
+	\[ X \sim Poisson(m) \]
+	
+	
+	\begin{itemize}
+		\item Expected Value of X : E(X) = m
+		\item Variance of X : $\mbox{Var}(X) = m$
+		\item Standard Deviation of X : $SD(X) = \sqrt{m}$
+	\end{itemize}
+}
+%------------------------------------------------------------------%
+\frame{
+	\frametitle{Poisson Distribution : Example} 
+	
+	\begin{itemize}
+		\item The number of faults in a fibre optic cable were recorded for each kilometre length of cable.
+		\item The mean number of faults was found to be 4 faults per kilometre.
+		\item The standard deviation of the number of faults was found to be 2 faults per kilometre.
+		\item Is the Poisson Distribution is a useful technique for modelling the number of faults in fibre optic cable?
+		\item (Looking at the last slide, the answer is yes, because the variance and mean are equal). 
+	\end{itemize}
+	
+}
+%---------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Poisson Approximation of the Binomial}
+	\begin{itemize}
+		\item The Poisson distribution can sometimes be used to approximate the
+		binomial distribution
+		\item When the number of observations n is large, and the success probability
+		p is small, the $B(n,p)$ distribution approaches the Poisson distribution
+		with the parameter given by $m = np$.
+		\item This is useful since the computations involved in calculating binomial
+		probabilities are greatly reduced.
+		\item As a rule of thumb, n should be greater than 50 with p very small, such
+		that np should be less than 5.
+		\item If the value of p is very high, the definition of what constitutes a
+		``success" or ``failure" can be switched.
+	\end{itemize}
+\end{frame}
+
+%---------------------------------------------------------------------%
+\begin{frame}
+	\frametitle{Poisson Approximation: Example}
+	
+	\begin{itemize}
+		\item Suppose we sample 1000 items from a production line that is producing, on
+		average, $0.1\%$ defective components.
+		\item Using the binomial distribution, the probability of exactly 3 defective items in
+		our sample is
+		\[P(X = 3) = ^{1000}C_{3} \times 0.001^{3} \times 0.999^{997}\]
+	\end{itemize}
+
+	\frametitle{Poisson Approximation: Example}
+	Lets compute each of the component terms individually.
+	
+	\begin{itemize}
+		\item $^{1000}C_{3}$
+		\[^{1000}C_{3} = \frac{1000 \times 999 \times 998}{3 \times 2 \times 1} = 166,167,000\]
+		\item $0.001^3$
+		\[0.001^3 = 0.000000001\]
+		\item $0.999^{997}$
+		\[0.999^{997} = 0.36880\]
+	\end{itemize}
+	
+	
+	Multiply these three values to compute the binomial probability
+	$P(X = 3) = 0.06128$
+
+
+	\begin{itemize}
+		\item Lets use the Poisson distribution to approximate a solution.
+		\item First check that $n \geq 50$ and $np < 5$ (Yes to both).
+		\item We choose as our parameter value $m = np = 1000 \times 0.001 = 1$
+	\end{itemize}
+	\[P(X = 3) = \frac{e^{-1} \times 1^3}{3!} = \frac{e^{-1}}{6} = \frac{0.36787}{6} = 0.06131 \]
+	Compare this answer with the Binomial probability
+	P(X = 3) = 0.06128.
+	Very good approximation, with much less computation effort.
+
+
+\end{document}

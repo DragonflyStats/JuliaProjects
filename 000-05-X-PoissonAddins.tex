@@ -1,0 +1,77 @@
+
+
+
+
+
+
+%
+%
+%\subsection{Binomial}
+%For the binomial distribution, if the probability of success is greater than 0.5, instead of considering the number of successes, to use the table we consider the number of failures.
+
+
+ 
+
+
+% Cumulative Distribution Function - Definition (probability mass function)
+% Changing the unit space.
+% Poisson Example (MA4102)
+% Key Rules
+% Distinguishing between binomial and poisson.
+% Poisson Approximation of Binomial
+%
+
+% Last class : Cumulative Tables tables
+% Formal Definition
+% Sample Space and Partitioning
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper,12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{eurosym}
+\usepackage{vmargin}
+\usepackage{amsmath}
+\usepackage{framed}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.00.0.2570}
+%TCIDATA{<META NAME="SaveForMode"CONTENT="1">}
+%TCIDATA{LastRevised=Wednesday, February 23, 201113:24:34}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\pagestyle{fancy}
+\setmarginsrb{20mm}{0mm}{20mm}{25mm}{12mm}{11mm}{0mm}{11mm}
+\lhead{MS4222} \rhead{Kevin O'Brien} \chead{Binomial Distribution} %\input{tcilatex}
+\begin{document}
+\section{Poisson Approximation of the Binomial}
+\begin{itemize}
+\item The Poisson distribution can sometimes be used to approximate the binomial distribution
+\item When the number of observations n is large, and the success probability p is small, the $\mbox{Bin}(n,p)$ distribution approaches the Poisson distribution 
+with the parameter given by $m = np$.
+\item This is useful since the computations involved in calculating binomial probabilities are greatly reduced.
+\item As a rule of thumb, n should be greater than 50 with p very small, such that $np$ should be less than 5.
+\item If the value of $p$ is very high, the definition of what constitutes a ``success" or ``failure" can be switched.
+\end{itemize}
+
+
+
+
+
+\end{document}
+
+
+
