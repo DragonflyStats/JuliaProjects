@@ -18,29 +18,6 @@
 \usepackage{graphicx}
 \begin{document}
 
-\section{Binomial Examples}		
-		\textbf{Binomial Example 1}
-		Suppose a signal of 100 bits is transmitted and the probability of
-		sending a bit correctly is 0.9. What is the probability of
-		\begin{enumerate}
-			\item  at least 10 errors
-			\item  exactly 7 errors
-			\item  Between 5 and 15 errors (inclusively).
-		\end{enumerate}
-		
-
-
-		\begin{itemize}
-			\item  Since the probability of success is 0.9. We consider the distribution
-			of the number of failures (errors).
-			\item  We reverse the definition of `success' and `failure'. Success is now defined as an error.
-			\item  The probability that a bit is sent incorrectly is 0.1.
-			\item  Let X be the total number of errors. $X \sim B(100, 0.1)$.
-			\item  Answer : $P(X \geq 10) = 0.5487$.
-			\item  $P(X = 7)=P(X \geq 7) - P(X \geq 8) =0.8828 - 0.7939 = 0.0889$.
-			\item  $P(5 \leq X  \leq 15) = P(X \geq 5) - P(X \geq 16) =0.9763 - 0.0399 = 0.9364$
-		\end{itemize}
-		
 
 
 
