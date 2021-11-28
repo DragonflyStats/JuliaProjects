@@ -95,27 +95,10 @@ However, we will not use this formula, although we later discuss what a probabil
 \end{center}
 
 }
-%------------------------------------------------------------------%
-\frame{
-\frametitle{ Characteristics of the Normal probability distribution}
-\begin{itemize}
-\item[1] The highest point on the normal curve is at the mean, which is also the median and mode of the distribution.
-\item[2] \alert{[VERY IMPORTANT]}
-The normal probability curve is bell-shaped and symmetric, with the shape of the curve to the left of the mean a mirror image of the shape of the curve to the right of the mean.
-\item[3] The standard deviation determines the width of the curve. Larger values of the the standard deviation result in wider flatter curves, showing more dispersion in data.
-\item[4] The total area under the curve for the normal probability distribution is 1.
-\end{itemize}
-}
-%------------------------------------------------------------------%
-\frame{
-\frametitle{ Characteristics of the Normal probability distribution}
-\begin{itemize}
-\item The interval defined by the mean $ \pm 1 \times $ standard deviation includes approximately $68\%$ of the observations, leaving $16\%$ (approx) in each tail.
-\item The interval defined by the mean $ \pm 1.96 \times $ standard deviation includes approximately $95\%$ of the observations, leaving $2.5\%$ (approx) in each tail.
-\item The interval defined by the mean $ \pm 2.58 \times $ standard deviation includes approximately $99\%$ of the observations, leaving $0.5\%$ (approx) in each tail.
-\end{itemize}
-\textbf{Remark:} It is useful to know this numbers, but we will do all calculations from first principles.
-}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 %------------------------------------------------------------------------%
 \frame{
 \frametitle{The Standard Normal Distribution}
@@ -338,67 +321,7 @@ or $P(X > 5)$. \item The complement of $P(X \geq k)$ can be written as $P(X \leq
 }
 
 
-%------------------------------------------------------------------%
-\frame{
-\frametitle{Complement and Symmetry Rules}
 
-Any normal distribution problem can be solved with some combination of the following rules.\\
-\bigskip \textbf{1. Complement rule}\begin{itemize}  \item Common to all continuous random variables
-\[P(Z \geq k) = 1 - P(Z \leq k) \]
-Similarly
-\[P(X \geq k) = 1 - P(X \leq k) \]
-\end{itemize}
-
-\[P(Z \leq 1.28) = 1 - P(Z \geq 1.28)  = 1-0.1003 = 0.8997\]
-}
-
-%------------------------------------------------------------------%
-\frame{
-\frametitle{Complement and Symmetry Rules}
-\textbf{2. Symmetry rule}
-\begin{itemize}
-\item
-This rule is based on the property of symmetry mentioned previously.
-\item
-Only the probabilities corresponding to values between 0 and 4 are tabulated in Murdoch Barnes.
-\item
-If we have a negative value of k, we can use the symmetry rule.
-\end{itemize}
-\[P(Z \leq -k) = P(Z \geq k) \]
-by extension, we can say
-\[P(Z \geq -k) = P(Z \leq k) \]
-}
-%------------------------------------------------------------------%
-\frame{
-\frametitle{Example}
-Find $P(Z \geq -1.28)$
-\textbf{Solution}\\
-\begin{itemize}
-\item Using the symmetry rule
-\[P(Z \geq -1.28) = P(Z \leq 1.28) \]
-\item Using the complement rule
-\[P(Z \geq -1.28) = 1 - P(Z \geq 1.28) \]
-\[P(Z \geq -1.28) = 1 - 0.1003 = 0.8997 \]
-\end{itemize}
-}
-%------------------------------------------------------------------%
-\frame{
-Find the probability of a ``z" random variable being between -1.8 and 1.96?
-i.e. Compute $P(-1.8 \leq Z \leq 1.96)$\\
-Solution
-\begin{itemize}
-\item Consider the complement event of being in this interval: a combination of being too low or too high.
-\item
-The probability of being too low for this interval is $P(Z \leq -1.80) = 0.0359$ (check)
-\item
-The probability of being too high for this interval is $P(Z \geq 1.96) = 0.0250$ (check)
-\item
-Therefore the probability of being \textbf{outside} the interval is 0.0359 + 0.0250 = 0.0609.
-\item
-Therefore the probability of being \textbf{inside} the interval is 1- 0.0609 = 0.9391
-$P(-1.8 \leq Z \leq 1.96) = 0.9391$
-\end{itemize}
-}
 
 %---------------------------------------------%
 \begin{frame}
