@@ -81,43 +81,6 @@ The probability that we run out of food $P(X>3)$ is the same as 1 minus the prob
 \[1 - P(X\leq3) = 1 - ( P(X=0) + P(X=1) + P(X=2) + P(X=3) ) = 1 - 0.4335 = 0.5665\]
 In other words, we have a 56.65% chance of selling out of our wonderful signature dish. I guess crossing our fingers is in order!
 
-\subsection*{Poisson Mean}
-We calculate the mean as follows:
-%\begin{verbatim}
-\[
-\operatorname{E}[X] = \sum_i f(x_i) \cdot x_i = \sum^{\infin}_{x=0} \frac{e^{-\lambda}\lambda^x}{x!}x \]
-\[
-\operatorname{E}[X] = \frac{e^{-\lambda}\lambda^0}{0!}\cdot 0 + \sum^{\infin}_{x=1} \frac{e^{-\lambda}\lambda^x}{x!}x\]
-\[
-\operatorname{E}[X] = 0 + e^{-\lambda} \sum^{\infin}_{x=1} \frac{\lambda \lambda^{x-1}}{(x-1)!}\]
-\[
-\operatorname{E}[X] = \lambda e^{-\lambda}\sum^{\infin}_{x=1} \frac{\lambda^{x-1}}{(x-1)!}\]
-\[
-\operatorname{E}[X] = \lambda e^{-\lambda}\sum^{\infin}_{x=0} \frac{\lambda^x}{x!}\]
-
-Remember that $\mathrm{e}^{\lambda} = \sum^{\infin}_{x=0} \frac{\lambda^x}{x!}$
-%\end{verbatim}
-
-$$\operatorname{E}[X] = \lambda e^{-\lambda}e^{\lambda}=\lambda$$
-Variance[edit]
-We derive the variance using the following formula:
-
-\[\operatorname{Var}[X] = \operatorname{E}[X^2] - (\operatorname{E}[X])^2\]
-We have already calculated E[X] above, so now we will calculate E[X2] and then return to this variance formula:
-\begin{verbatim}
-\[\operatorname{E}[X^2] = \sum_i f(x_i) \cdot x^2
-\operatorname{E}[X^2] = \sum^{\infin}_{x=0} \frac{e^{-\lambda}\lambda^x}{x!}x^2
-\operatorname{E}[X^2] = 0+\sum^{\infin}_{x=1} \frac{e^{-\lambda}\lambda \lambda^{x-1}}{(x-1)!}x
-\operatorname{E}[X^2] = \lambda\sum^{\infin}_{x=0} \frac{e^{-\lambda}\lambda^x}{x!}(x+1)
-\operatorname{E}[X^2] = \lambda\left[\sum^{\infin}_{x=0} \frac{e^{-\lambda}\lambda^x}{x!}x+\sum^{\infin}_{x=0} \frac{e^{-\lambda}\lambda^x}{x!}\right]\]
-\end{verbatim}
-The first sum is E[X]=λ and the second we also calculated above to be 1.
-
-\[\operatorname{E}[X^2] = \lambda\left[\lambda+1\right]=\lambda^2+\lambda\]
-Returning to the variance formula we find that
-
-$$\operatorname{Var}[X] = (\lambda^2+\lambda) - (\lambda)^2=\lambda$$
-External links[edit]
 
 
 \subsection*{Examples}
