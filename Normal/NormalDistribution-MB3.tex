@@ -247,6 +247,175 @@ Answer $P(Z \geq 1.96)  = 0.0250$
 \end{tabular}
 %\label{table:nonlin} % is used to refer this table in the text
 \end{table}
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{Using Murdoch Barnes tables 3}
+\begin{itemize}
+\item Find $ P(Z \geq 0.60)$
+\item Find $ P(Z \geq 1.64)$
+\item Find $ P(Z \geq 1.65)$
+\item Estimate $P( Z \geq 1.645)$
+\end{itemize}
+}
+
+%------------------------------------------------------------------------%
+\frame{
+\begin{table}[ht]
+\frametitle{Find $ P(Z \geq 0.60)$}
+\vspace{-1.5cm}
+%\caption{Standard Normal Distribution } % title of Table
+\centering % used for centering table
+\begin{tabular}{|c|| c c c c c c|} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+& 0.00 & 0.01 & 0.02 &0.03&\ldots&\ldots \\
+%heading
+\hline \hline% inserts single horizontal line \hline
+\ldots & \ldots &\ldots &\ldots& \ldots &\ldots&\ldots \\ % inserting body of the table
+0.4 & 0.3446 & 0.3409&0.3372 & 0.3336 &\ldots&\ldots\\
+0.5 & 0.3085 & 0.3050 &0.3015& 0.2981 &\ldots&\dots \\ % inserting body of the table
+0.6 & \alert{0.2743} & 0.2709&0.2676 & 0.2643 &\ldots&\ldots\\
+0.7 & 0.2420 & 0.2389 &0.2358& 0.2327 &\ldots&\dots \\ % inserting body of the table
+\ldots & \ldots &\ldots &\ldots& \ldots &\ldots&\ldots \\ % inserting body of the table
+\hline %inserts single line
+\end{tabular}
+%\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+}
+
+%------------------------------------------------------------------------%
+\frame{
+\begin{table}[ht]
+\frametitle{Find $ P(Z \geq 1.64)$ and $ P(Z \geq 1.65)$}
+\vspace{-1.5cm}
+%\caption{Standard Normal Distribution } % title of Table
+\centering % used for centering table
+\begin{tabular}{|c|| c c c c c c|} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+& \ldots & \ldots & 0.04 & 0.05 &0.06&0.07 \\
+%heading
+\hline \hline% inserts single horizontal line
+\ldots & \ldots &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+1.5 & \ldots & 0.0630&0.0618& 0.0606 &0.0594&\dots \\ % inserting body of the table
+1.6 & \ldots &0.0516& \alert{0.0505} & \alert{0.0495} &0.0485&\ldots\\
+1.7 & \ldots &0.0418 &0.0409& 0.0401 &0.0392&\dots \\ % inserting body of the table
+\ldots & \ldots &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+\hline %inserts single line
+\end{tabular}
+%\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+}
+
+%------------------------------------------------------------------------%
+\frame{
+\frametitle{Using Murdoch Barnes tables 3}
+\begin{itemize}
+\item $ P(Z \geq 1.64) = 0.505$
+\item $ P(Z \geq 1.65) = 0.495$ \bigskip
+\item $ P(Z \geq 1.645)$ is approximately the average value of $ P(Z \geq 1.64)$ and $ P(Z \geq 1.65)$.
+\item $ P(Z \geq 1.645)$ = (0.0495 + 0.0505)/2 = 0.0500. ( i.e. $5\%$ )
+\end{itemize}
+}
+%------------------------------------------------------------------%
+\frame{
+\frametitle{Exact Probability}
+\large
+\alert{Remarks:} This is for continuous distributions only.
+\begin{itemize}
+\item The probability that a continuous random variable will take an exact value is infinitely small.
+We will usually treat it as if it was zero.
+\item
+When we write probabilities for continuous random variables in mathematical notation, we often retain the equality component (i.e. the "...or equal to..").\\
+For example, we would write expressions $P(X \leq 2)$ or $P(X \geq 5)$.
+\item
+Because the probability of an exact value is almost zero, these two expression are equivalent to $P(X < 2)$
+or $P(X > 5)$. \item The complement of $P(X \geq k)$ can be written as $P(X \leq k)$.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------------------%
+\frame{
+\begin{table}[ht]
+\frametitle{Find $ P(Z \geq 1.65)$ and $ P(Z \geq 1.65)$}
+\vspace{-1.5cm}
+%\caption{Standard Normal Distribution } % title of Table
+\centering % used for centering table
+\begin{tabular}{|c|| c c c c c c|} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+ & \ldots  & 0.04 & 0.05 &0.06&0.07&\ldots \\
+%heading
+\hline  \hline% inserts single horizontal line
+\ldots  & \ldots  &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+1.5  & \ldots  & 0.0630&0.0618& 0.0606 &0.0594&\dots \\ % inserting body of the table
+1.6  & \ldots  &0.0516&0.0505 & 0.0495 &0.0485&\ldots\\
+1.7  & \ldots  &0.0418 &0.0409& 0.0401 &0.0392&\dots \\ % inserting body of the table
+\ldots  & \ldots  &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+\hline %inserts single line
+\end{tabular}
+%\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+}
+%------------------------------------------------------------------------%
+\frame{
+\begin{table}[ht]
+\frametitle{Estimate $ P(Z \geq 1.645)$}
+\vspace{-1.5cm}
+%\caption{Standard Normal Distribution } % title of Table
+\centering % used for centering table
+\begin{tabular}{|c|| c c c c c c|} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+ & \ldots  & 0.04 & 0.05 &0.06&0.07&\ldots \\
+%heading
+\hline  \hline% inserts single horizontal line
+\ldots  & \ldots  &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+1.5  & \ldots  & 0.0630&0.0618& 0.0606 &0.0594&\dots \\ % inserting body of the table
+1.6  & \ldots  &0.0516&0.0505 & 0.0495 &0.0485&\ldots\\
+1.7  & \ldots  &0.0418 &0.0409& 0.0401 &0.0392&\dots \\ % inserting body of the table
+\ldots  & \ldots  &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+\hline %inserts single line
+\end{tabular}
+%\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+}
+
+
+
+\frame{
+\frametitle{Using Murdoch Barnes Tables 3}
+
+Find $ P(Z \geq 1.64)$ and $ P(Z \geq 1.65)$.\\\bigskip Which row and column?
+\begin{itemize}
+\item 1.64 = \color{blue}{1.6}+\color{orange}{0.04} \color{black}\hspace{2cm}$ P(Z \geq 1.64) =0.0505$
+\item 1.65 = \color{blue}{1.6}+\color{green}{0.05}  \color{black} \hspace{2cm}$ P(Z \geq 1.65) =0.0495$
+\end{itemize}
+\bigskip
+\small
+\begin{table}[ht]
+%\caption{Standard Normal Distribution } % title of Table
+\centering % used for centering table
+\begin{tabular}{|c|| c c c c c c|} % centered columns (4 columns)
+\hline %inserts double horizontal lines
+& & \ldots & \color{orange}{0.04} & \color{green}{0.05} &0.06&0.07\ldots \\
+%heading
+\hline \hline% inserts single horizontal line
+\ldots & \ldots &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+1.5 & \ldots & 0.0630&0.0618& 0.0606 &0.0594&\dots \\ % inserting body of the table
+\color{blue}{1.6} & \ldots &0.0516& \alert{0.0505} & \alert{0.0495} &0.0485&\ldots\\
+1.7 & \ldots &0.0418 &0.0409& 0.0401 &0.0392&\dots \\ % inserting body of the table
+\ldots & \ldots &\ldots &\ldots& \ldots &\ldots&\ldots \\ %Checked
+\hline %inserts single line
+\end{tabular}
+%\label{table:nonlin} % is used to refer this table in the text
+\end{table}
+}
+
+%--------------------------------------------------------%
+
+%--------------------------------------------------------------
+
+
+
+
 
 
 \end{document}
