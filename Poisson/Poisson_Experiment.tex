@@ -1,0 +1,67 @@
+
+%---------------------------------------------------------------------------%
+\frame{
+\frametitle{Characteristics of a Poisson Experiment}
+A Poisson experiment is a statistical experiment that has the following properties:
+\begin{itemize}
+\item The experiment results in outcomes that can be classified as successes or failures.
+\item The average number of successes (m) that occurs in a specified region is known.
+\item The probability that a success will occur is proportional to the size of the region.
+\item The probability that a success will occur in an extremely small region is virtually zero.
+\end{itemize}
+Note that the specified region could take many forms. For instance, it could be a length, an area, a volume, a period of time, etc.
+}
+
+%---------------------------------------------------------------------------%
+\frame{
+\frametitle{Poisson Distribution}
+A Poisson random variable is the number of successes that result from a Poisson experiment.
+ 
+The probability distribution of a Poisson random variable is called a Poisson distribution.
+
+Given the mean number of successes ($m$) that occur in a specified region, we can compute the Poisson probability based on the following formula:
+}
+
+%---------------------------------------------------------------------------%
+\frame{
+\frametitle{The Poisson Probability Distribution}
+\begin{itemize}
+\item The number of occurrences in a unit period (or space)
+\item The expected number of occurrences is $m$
+\end{itemize}
+
+
+\frametitle{Poisson Formulae}
+The probability that there will be $k$ occurences in a unit time period is denoted $P(X=k)$, and is computed as follows.
+\Large
+\[ P(X = k)=\frac{m^k e^{-m}}{k!} \]
+
+
+\frametitle{Poisson Formulae}
+Given that there is on average 2 occurences per hour, what is the probability of no occurences in the next hour? \\ i.e. Compute $P(X=0)$ given that $m=2$
+\Large
+\[ P(X = 0)=\frac{2^0 e^{-2}}{0!} \]
+\normalsize
+\begin{itemize}
+\item $2^0$ = 1
+\item $0!$ = 1
+\end{itemize}
+The equation reduces to 
+\[ P(X = 0)=e^{-2} = 0.1353\]
+
+
+\frametitle{Poisson Formulae}
+What is the probability of one occurences in the next hour? \\ i.e. Compute $P(X=1)$ given that $m=2$
+\Large
+\[ P(X = 1)=\frac{2^1 e^{-2}}{1!} \]
+\normalsize
+\begin{itemize}
+\item $2^1$ = 2
+\item $1!$ = 1
+\end{itemize}
+The equation reduces to
+\[ P(X = 1) = 2 \times e^{-2} = 0.2706\]
+}
+%---------------------------------------------------------------------------%
+
+\end{document} 
