@@ -1,6 +1,4 @@
-Introduction to Regression Models
+Julia Projects
 =================================================
 
-- `lm` - fitting a linear model
-- model summary
-- `AIC` - The AIC criterion
+- `tidier.jl` 
